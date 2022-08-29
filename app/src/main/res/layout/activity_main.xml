@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Добро Пожаловать!"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text111"
+        android:layout_width="163dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+
+        android:text="Выполните вход \nили зарегистрируйтесь"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text222"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/text222"
+        android:layout_width="330dp"
+        android:layout_height="55sp"
+        android:layout_marginTop="50sp"
+        android:background="@color/white"
+        android:hint="@string/email"
+        android:paddingStart="10sp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/text333"
+
+        app:layout_constraintTop_toBottomOf="@+id/text111" />
+
+    <EditText
+        android:id="@+id/text333"
+        android:layout_width="330dp"
+        android:layout_height="55sp"
+        android:layout_marginTop="10sp"
+        android:background="@color/white"
+        android:hint="@string/password"
+        android:paddingStart="10sp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text222"
+        app:layout_constraintBottom_toTopOf="@+id/text444"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/text444"
+        android:layout_width="330dp"
+        android:layout_height="55sp"
+        android:layout_marginTop="10sp"
+        android:backgroundTint="#7A7878"
+        android:text="@string/ddd"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:cornerRadius="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text333"
+        app:layout_constraintBottom_toTopOf="@+id/text555"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Нажми сюда"
+        android:textColor="#FF9800"
+        app:layout_constraintStart_toEndOf="@+id/text555"
+        app:layout_constraintTop_toTopOf="@+id/text555"
+        app:layout_constraintRight_toRightOf="@id/text444"
+        app:layout_constraintBottom_toBottomOf="@id/text555"/>
+
+    <TextView
+        android:id="@+id/text555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:text="Забыл пароль?"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text444"
+        app:layout_constraintBottom_toBottomOf="@id/text444"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Derix Fox</string>
+    <string name="n">Выполните вход \n или зарегистрируйтесь</string>
+    <string name="email">Введите вашу почту</string>
+    <string name="password">Введите пароль</string>
+    <string name="ddd">Войти</string>
+</resources>
