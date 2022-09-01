@@ -8,10 +8,18 @@
     tools:context=".MainActivity">
 
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:background="@drawable/pp"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.appbar.MaterialToolbar>
     <TextView
+        android:id="@+id/text000"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginBottom="140dp"
         android:text="Вход"
         android:textColor="@color/white"
@@ -20,29 +28,30 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="120dp"
         android:text="Добро Пожаловать!"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/text111"
-        app:layout_constraintLeft_toLeftOf="@id/text111"
-        app:layout_constraintRight_toRightOf="@id/text111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
 
     <TextView
         android:id="@+id/text111"
         android:layout_width="163dp"
         android:layout_height="36dp"
-        android:layout_marginBottom="40dp"
-
+        android:layout_marginBottom="70dp"
         android:text="Выполните вход \nили зарегистрируйтесь"
         android:textColor="@color/white"
 
@@ -54,9 +63,9 @@
         android:id="@+id/text222"
         android:layout_width="330dp"
         android:layout_height="55sp"
-        android:layout_margin="10sp"
-        android:background="@color/white"
-        android:hint="@string/email"
+        android:layout_margin="15sp"
+        android:background="@drawable/fon"
+        android:hint="Введите почту"
         android:paddingStart="10sp"
         android:textColor="@color/black"
         android:textSize="15sp"
@@ -73,7 +82,7 @@
         android:layout_height="55sp"
         android:layout_marginVertical="10dp"
         android:layout_marginTop="50sp"
-        android:background="@color/white"
+        android:background="@drawable/fon"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingStart="10sp"
@@ -89,13 +98,13 @@
         android:id="@+id/text444"
         android:layout_width="330dp"
         android:layout_height="55sp"
-
         android:layout_margin="10sp"
         android:backgroundTint="#7A7878"
         android:text="@string/ddd"
         android:textColor="@color/white"
+        android:textStyle="bold"
         android:textSize="13sp"
-        app:cornerRadius="5dp"
+        app:cornerRadius="9dp"
         app:layout_constraintBottom_toTopOf="@+id/text555"
         app:layout_constraintLeft_toLeftOf="parent"
 
@@ -113,14 +122,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="@id/text444"
         app:layout_constraintStart_toEndOf="@+id/text555" />
+
     <TextView
         android:id="@+id/text555"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
         android:layout_marginBottom="100dp"
         android:text="Забыл пароль?"
         android:textColor="@color/white"
-android:layout_marginEnd="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
