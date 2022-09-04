@@ -39,7 +39,7 @@ private ImageView fon;
         textView = findViewById(R.id.textView);
         text111 = findViewById(R.id.text111);
         text000 = findViewById(R.id.text000);
-        fon = findViewById(R.id.fon);
+
 
         editText1.addTextChangedListener(new TextWatcher() {
             @Override
