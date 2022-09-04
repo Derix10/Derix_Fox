@@ -83,24 +83,21 @@ private ImageView fon;
         });
 
 
-        button_one.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (editText1.getText().toString().equals("admin") && editText2.getText().toString()
-                        .equals("admin")) {
-                    text000.setVisibility(View.GONE);
-                    text111.setVisibility(View.GONE);
-                    editText1.setVisibility(View.GONE);
-                    editText2.setVisibility(View.GONE);
-                    button_one.setVisibility(View.GONE);
-                    text555.setVisibility(View.GONE);
-                    text666.setVisibility(View.GONE);
-                    Toast.makeText(MainActivity.this, "Вы успешно зарегистрировались"
-                            , Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(MainActivity.this, "Неправильный пароль или Email",
-                            Toast.LENGTH_LONG).show();
-                }
+        button_one.setOnClickListener(view -> {
+            if (editText1.getText().toString().equals("admin") && editText2.getText().toString()
+                    .equals("admin")) {
+                text000.setVisibility(View.GONE);
+                text111.setVisibility(View.GONE);
+                editText1.setVisibility(View.GONE);
+                editText2.setVisibility(View.GONE);
+                button_one.setVisibility(View.GONE);
+                text555.setVisibility(View.GONE);
+                text666.setVisibility(View.GONE);
+                Toast.makeText(MainActivity.this, "Вы успешно зарегистрировались"
+                        , Toast.LENGTH_LONG).show();
+            } else {
+                Toast.makeText(MainActivity.this, "Неправильный пароль или Email",
+                        Toast.LENGTH_LONG).show();
             }
         });
     }
