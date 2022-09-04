@@ -1,24 +1,29 @@
 package com.example.derixfox;
 
+import static android.graphics.Color.RED;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
-import android.os.Build;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.material.button.MaterialButton;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     private MaterialButton button_one;
     private TextView text111, text555, text666, textView,text000;
-
+private ImageView fon;
 
     private EditText editText1, editText2;
 
@@ -34,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         text111 = findViewById(R.id.text111);
         text000 = findViewById(R.id.text000);
-
+        fon = findViewById(R.id.fon);
 
         editText1.addTextChangedListener(new TextWatcher() {
             @Override
@@ -49,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable editText1) {
                 if (editText1.toString().length() > 0) {
-                    button_one.setBackgroundColor(Color.RED);
+                    button_one.setBackgroundColor(RED);
                 } else {
                     button_one.setBackgroundColor(Color.GRAY);
                 }
@@ -70,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable editText2) {
                 if (editText2.toString().length() > 0) {
-                    button_one.setBackgroundColor(Color.RED);
+                    button_one.setBackgroundColor(RED);
                 } else {
                     button_one.setBackgroundColor(Color.GRAY);
                 }
@@ -99,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
 
 

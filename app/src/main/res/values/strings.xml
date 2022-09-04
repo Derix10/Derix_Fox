@@ -1,7 +1,14 @@
 <resources>
+
     <string name="app_name">Derix Fox</string>
     <string name="n">Выполните вход \n или зарегистрируйтесь</string>
     <string name="email">Введите вашу почту</string>
     <string name="password">Введите пароль</string>
     <string name="ddd">Войти</string>
+    <string name="vhod">Вход</string>
+    <string name="welcome">Добро Пожаловать!</string>
+    <string name="registration">Выполните вход \nили зарегистрируйтесь</string>
+    <string name="emaill">Введите почту</string>
+    <string name="touch">Нажми сюда</string>
+    <string name="forgotThepassword">Забыл пароль?</string>
 </resources>
